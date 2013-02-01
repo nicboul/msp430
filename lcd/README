@@ -17,3 +17,10 @@ hd44780 <->  m430g2553
 1  -> GND
 
 GND(msp) -> GND(5v)
+
+
+
+Vcc ------  LUMEN SENSOR ------ 22K ------- GND
+                           |
+			   |
+			P1.4

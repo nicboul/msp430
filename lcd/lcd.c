@@ -112,20 +112,21 @@ void lcd_cursor_xy(unsigned char x, unsigned char y)
 	}
 }
 /*
-void integerToLcd(int integer )
+void lcd_print_int(int integer)
 {
-	unsigned char thousands,hundreds,tens,ones;
-	thousands = integer / 1000;
 
-    lcdData(thousands + 0x30);
+    unsigned char thousands,hundreds,tens,ones;
+    thousands = integer / 1000;
 
-	 hundreds = ((integer - thousands*1000)-1) / 100;
+    lcd_data(thousands + 0x30);
+    
+    hundreds = ((integer - thousands*1000)-1) / 100;
 
-	lcdData( hundreds + 0x30);
-	tens=(integer%100)/10;
+	lcd_data(hundreds + 0x30);
+	tens = (integer%100)/10;
 
-	lcdData( tens + 0x30);
-	ones=integer%10;
+	lcd_data(tens + 0x30);
+	ones = integer%10;
 
 	lcdData( ones + 0x30);
 }
