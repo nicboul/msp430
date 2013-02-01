@@ -1,1 +1,1 @@
-![schematic](https://github.com/nicboul/msp430/blob/master/lcd/schematic/lcd_bb.png)
+![schematic](https://raw.github.com/nicboul/msp430/master/lcd/schematic/lcd_bb.png)
